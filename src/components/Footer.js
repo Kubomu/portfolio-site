@@ -16,12 +16,12 @@ const Footer = () => {
       <footer style={footerStyle}>
         <div style={containerStyle}>
           <div style={contactStyle}>
-            <h3>Contact Us</h3>
+            <h3 style={headerStyle}>Contact Us</h3>
             <p>Email: Kubomuedwin@gmail.com</p>
             <p>Phone: +256 788 150 981</p>
           </div>
           <div style={socialStyle}>
-            <h3>Follow Us</h3>
+            <h3 style={headerStyle}>Follow Us</h3>
             <a href="https://x.com/KubomuEdi" style={linkStyle} target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faXTwitter} style={iconStyle} />
               Twitter
@@ -32,7 +32,7 @@ const Footer = () => {
             </a>
           </div>
           <div style={linksStyle}>
-            <h3>Quick Links</h3>
+            <h3 style={headerStyle}>Quick Links</h3>
             <a href="#about" style={linkStyle}>About</a>
             <a href="#services" style={linkStyle}>Services</a>
             <a href="#portfolio" style={linkStyle}>Portfolio</a>
@@ -50,7 +50,7 @@ const Footer = () => {
 const footerStyle = {
   backgroundColor: '#2C3E50',
   color: '#ECF0F1',
-  padding: '20px 0',
+  padding: '10px 0', // Reduced padding
   textAlign: 'center',
 };
 
@@ -63,47 +63,50 @@ const containerStyle = {
 };
 
 const contactStyle = {
-  margin: '10px 20px',
+  margin: '5px 10px', // Reduced margin
 };
 
 const socialStyle = {
-  margin: '10px 20px',
+  margin: '5px 10px', // Reduced margin
 };
 
 const linksStyle = {
-  margin: '10px 20px',
+  margin: '5px 10px', // Reduced margin
+};
+
+const headerStyle = {
+  fontSize: '16px', // Reduced header font size
 };
 
 const linkStyle = {
   color: '#ECF0F1',
   textDecoration: 'none',
-  margin: '5px 0',
+  margin: '3px 0', // Reduced margin
   display: 'block',
   transition: 'color 0.3s',
+  fontSize: '14px', // Reduced font size for links
 };
 
 const copyrightStyle = {
-  marginTop: '20px',
-  fontSize: '14px',
+  marginTop: '10px', // Reduced margin
+  fontSize: '12px', // Reduced font size
 };
 
 const iconStyle = {
-  marginRight: '8px', // Space between icon and text
-  fontSize: '20px', // Adjust icon size if needed
+  marginRight: '5px', // Space between icon and text
+  fontSize: '18px', // Adjust icon size if needed
 };
 
 // Media queries for responsive design
-const mediaQueries = `
-  @media (max-width: 600px) {
+const mediaQueries = `@media (max-width: 600px) {
     ${containerStyle.display = 'flex'}
     ${containerStyle.flexDirection = 'column'}
     ${containerStyle.alignItems = 'center'}
     ${contactStyle.margin = '5px 0'}
     ${socialStyle.margin = '5px 0'}
     ${linksStyle.margin = '5px 0'}
-    ${linkStyle.fontSize = '16px'} // Adjust font size for mobile
-    ${copyrightStyle.fontSize = '12px'} // Adjust copyright font size for mobile
-  }
-`;
+    ${linkStyle.fontSize = '14px'} // Adjust font size for mobile
+    ${copyrightStyle.fontSize = '10px'} // Adjust copyright font size for mobile
+}`;
 
 export default Footer;

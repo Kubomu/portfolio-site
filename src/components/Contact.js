@@ -44,35 +44,7 @@ const Contact = () => {
             <strong>Phone:</strong> +256 788 150 981
           </p>
         </div>
-        <form onSubmit={handleSubmit} style={formStyle}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            style={inputStyle}
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            style={inputStyle}
-          />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-            style={textareaStyle}
-          />
-          <button type="submit" style={buttonStyle}>Send Message</button>
-        </form>
+        
       </section>
     </>
   );
