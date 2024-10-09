@@ -1,64 +1,118 @@
-/* About.css */
-
+/* General Styles */
 #about {
-  padding: 50px 20px;
-  background-color: #f4f4f4; /* Light gray background */
-  text-align: center;
-}
-
-.about-heading {
-  font-size: 2.5em;
-  color: #2C3E50; /* Dark color for the heading */
-  margin-bottom: 20px;
-}
-
-.about-description {
-  font-size: 1.1em;
-  color: #333; /* Dark gray for readability */
-  line-height: 1.6; /* Better spacing for readability */
-  max-width: 800px; /* Limit width for readability */
-  margin: 0 auto; /* Center the text */
-}
-
-.ceo-section {
-  margin-top: 30px;
-  padding: 20px;
-  background-color: #e8e8e8; /* Light gray background for CEO section */
-  border-radius: 8px;
-}
-
-.ceo-heading {
-  font-size: 1.8em;
-  color: #2C3E50;
-  margin-bottom: 10px;
-}
-
-.additional-section {
-  margin-top: 30px;
-  padding: 20px;
-  background-color: #ffffff; /* White background for additional section */
-  border-radius: 8px;
-  text-align: left; /* Left-align text */
- 
-}
-
-.additional-heading {
-  font-size: 1.8em;
-  color: #2C3E50;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.expertise-list {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.expertise-list-item {
-  padding: 5px 0; /* Space between list items */
-  transition: color 0.3s; /* Smooth color transition */
-}
-
-.expertise-list-item:hover {
-  color: #2C3E50; /* Change color on hover for effect */
-}
+    padding: 5% 4%; /* Responsive padding */
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .about-heading {
+    font-size: 2.5em;
+    color: #2C3E50;
+    margin-bottom: 20px;
+  }
+  
+  .about-description {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .ceo-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e8e8e8;
+    border-radius: 8px;
+  }
+  
+  .ceo-heading {
+    font-size: 1.8em;
+    color: #2C3E50;
+    margin-bottom: 10px;
+  }
+  
+  .additional-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  .additional-heading {
+    font-size: 1.8em;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .expertise-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .expertise-list-item {
+    padding: 5px 0;
+    transition: color 0.3s;
+  }
+  
+  .expertise-list-item:hover {
+    color: #2C3E50;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) { /* Tablets and small screens */
+    #about {
+      padding: 30px 10px;
+    }
+  
+    .about-heading {
+      font-size: 2em;
+    }
+  
+    .about-description {
+      font-size: 1em;
+      max-width: 90%; /* Adjust the width for readability */
+    }
+  
+    .ceo-section {
+      padding: 15px;
+    }
+  
+    .ceo-heading {
+      font-size: 1.6em;
+    }
+  
+    .additional-heading {
+      font-size: 1.6em;
+    }
+  }
+  
+  @media (max-width: 480px) { /* Phones */
+    #about {
+      padding: 20px 5px;
+    }
+  
+    .about-heading {
+      font-size: 1.8em;
+    }
+  
+    .about-description {
+      font-size: 0.9em;
+      max-width: 100%; /* Full width for small screens */
+    }
+  
+    .ceo-section {
+      padding: 10px;
+    }
+  
+    .ceo-heading {
+      font-size: 1.4em;
+    }
+  
+    .additional-heading {
+      font-size: 1.4em;
+    }
+  }
+  

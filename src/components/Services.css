@@ -1,46 +1,81 @@
-/* Services.css */
-
+/* General Styles */
 #services {
-    padding: 50px 20px;
-    background-color: #f8f9fa; /* Light gray background */
-    text-align: center;
-    border-top: 5px solid #2C3E50; /* Top border for emphasis */
-  }
-  
-  .heading {
-    font-size: 2.5em;
-    color: #2C3E50; /* Darker color for the heading */
-    margin-bottom: 20px;
-  }
-  
-  .serviceList {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
-  }
-  
+  padding: 50px 20px;
+  background-color: #f8f9fa; /* Light gray background */
+  text-align: center;
+  border-top: 5px solid #2C3E50; /* Top border for emphasis */
+}
+
+.heading {
+  font-size: 2.5em;
+  color: #2C3E50; /* Darker color for the heading */
+  margin-bottom: 20px;
+}
+
+.serviceList {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.serviceItem {
+  width: 30%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 10px; /* Add spacing between items */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.serviceItem:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.serviceTitle {
+  font-size: 1.5em;
+  color: #2C3E50;
+}
+
+.serviceDescription {
+  font-size: 1em;
+  color: #555; /* Slightly lighter color for text */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) { /* Tablets */
   .serviceItem {
-    width: 30%;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin: 10px; /* Add spacing between items */
-    transition: transform 0.3s; /* Smooth transition for hover effect */
+    width: 45%; /* Adjust width for tablets */
   }
-  
-  .serviceItem:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
+
+  .heading {
+    font-size: 2.2em; /* Slightly smaller heading */
   }
-  
+
   .serviceTitle {
-    font-size: 1.5em;
-    color: #2C3E50;
+    font-size: 1.4em; /* Slightly smaller title size */
   }
-  
+
   .serviceDescription {
-    font-size: 1em;
-    color: #555; /* Slightly lighter color for text */
+    font-size: 0.95em; /* Adjust description font size */
   }
-  
+}
+
+@media (max-width: 480px) { /* Phones */
+  .serviceItem {
+    width: 90%; /* Full width for phone screens */
+  }
+
+  .heading {
+    font-size: 2em; /* Further reduced heading size */
+  }
+
+  .serviceTitle {
+    font-size: 1.2em; /* Further reduced title size */
+  }
+
+  .serviceDescription {
+    font-size: 0.9em; /* Smaller description font size */
+  }
+}
