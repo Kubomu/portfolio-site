@@ -1,95 +1,84 @@
 /* General Styles */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #f7f9fc;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
 .contact-heading {
-  font-size: 2em;
-  color: #2C3E50;
+  font-size: 32px;
+  color: #4caf50;
   margin-bottom: 20px;
 }
 
 .contact-description {
-  font-size: 1.2em;
-  color: #555;
+  font-size: 18px;
+  color: #2c3e50;
   margin-bottom: 30px;
 }
 
-.contact-input,
-.contact-textarea {
+.contact-info p {
+  font-size: 18px;
+  color: #34495e;
+}
+
+.contact-info strong {
+  color: #4caf50;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.input-field,
+.textarea-field {
   margin: 10px 0;
-  padding: 10px;
+  padding: 12px;
   font-size: 16px;
-  border-radius: 4px;
   border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.contact-textarea {
-  height: 100px;
+.textarea-field {
+  height: 120px;
+  resize: none;
 }
 
-.contact-button {
-  padding: 10px 20px;
-  font-size: 16px;
+.submit-btn {
+  padding: 12px 20px;
+  font-size: 18px;
   background-color: #2C3E50;
-  color: white;
+  color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.contact-button:hover {
-  background-color: #1A252F; /* Darker shade on hover */
+.submit-btn:hover {
+  background-color: #34495e;
 }
 
-.testimonials-heading {
-  text-align: left;
-  font-size: 1.5em;
-  color: #2C3E50;
-  margin-bottom: 10px;
+.form-status {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #e74c3c;
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) { /* Tablets and small screens */
+@media (max-width: 768px) {
   .contact-heading {
-    font-size: 1.8em;
+    font-size: 28px;
   }
 
-  .contact-description {
-    font-size: 1.1em;
-  }
-
-  .contact-input,
-  .contact-textarea {
-    font-size: 15px;
-  }
-
-  .contact-button {
-    padding: 8px 16px;
-    font-size: 15px;
-  }
-
-  .testimonials-heading {
-    font-size: 1.3em;
-  }
-}
-
-@media (max-width: 480px) { /* Phones */
-  .contact-heading {
-    font-size: 1.6em;
-  }
-
-  .contact-description {
-    font-size: 1em;
-  }
-
-  .contact-input,
-  .contact-textarea {
-    font-size: 14px;
-  }
-
-  .contact-button {
-    padding: 6px 12px;
-    font-size: 14px;
-  }
-
-  .testimonials-heading {
-    font-size: 1.2em;
+  .contact-description,
+  .contact-info p {
+    font-size: 16px;
   }
 }

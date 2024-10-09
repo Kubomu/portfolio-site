@@ -1,66 +1,96 @@
+/* Portfolio.css */
+
 /* General Styles */
 #portfolio {
-  padding: 50px 20px;
-  background-color: #f9f9f9; /* Background color */
+  padding: 40px 20px;
+  background-color: #f7f9fc;
+  color: #2c3e50;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
 }
 
 .portfolio-heading {
-  text-align: center;
+  font-size: 32px;
   margin-bottom: 30px;
+  color: #4caf50;
 }
 
+/* Portfolio Grid */
 .projectList {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap; /* Allow wrapping of items */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .projectItem {
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  padding: 20px;
+  width: 30%;
   margin: 15px;
-  text-align: center; /* Center text within the project item */
-  width: 300px; /* Fixed width for project items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.imageStyle {
-  width: 100%; /* Make images responsive */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Rounded corners */
+.projectItem:hover {
+  transform: translateY(-5px);
 }
 
 .projectTitle {
-  font-size: 1.5em; /* Title size */
-  margin: 10px 0;
+  font-size: 24px;
+  margin: 15px 0 10px;
+  color: #4caf50;
 }
 
 .projectDescription {
-  color: #555; /* Description color */
+  font-size: 18px;
+  color: #34495e;
+  line-height: 1.6;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) { /* Tablets and small screens */
+/* Image Styling */
+.imageStyle {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .projectItem {
-    width: 45%; /* Adjust width for tablets */
+    width: 45%;
+  }
+
+  .portfolio-heading {
+    font-size: 28px;
   }
 
   .projectTitle {
-    font-size: 1.4em; /* Slightly smaller title size */
+    font-size: 22px;
   }
 
   .projectDescription {
-    font-size: 1em; /* Adjust description font size */
+    font-size: 16px;
   }
 }
 
-@media (max-width: 480px) { /* Phones */
+@media (max-width: 600px) {
   .projectItem {
-    width: 90%; /* Full width for phone screens */
+    width: 90%;
+  }
+
+  .portfolio-heading {
+    font-size: 26px;
   }
 
   .projectTitle {
-    font-size: 1.2em; /* Further reduced title size */
+    font-size: 20px;
   }
 
   .projectDescription {
-    font-size: 0.9em; /* Smaller description font size */
+    font-size: 14px;
   }
 }

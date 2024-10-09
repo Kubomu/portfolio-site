@@ -1,6 +1,6 @@
 import React from 'react';
-import { Helmet } from 'react-helmet'; // Import Helmet
-import './About.css'; // Ensure the path is correct based on your file structure
+import { Helmet } from 'react-helmet'; 
+import './About.css'; 
 
 const About = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Helmet } from 'react-helmet'; // Import Helmet for managing meta tags
-import './Services.css'; // Make sure the path is correct based on your file structure
+import { Helmet } from 'react-helmet'; 
+import './Services.css'; 
 
 const Services = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Helmet } from 'react-helmet'; // Import Helmet for managing meta tags
-import './Portfolio.css'; // Ensure the path is correct based on your file structure
+import { Helmet } from 'react-helmet'; 
+import './Portfolio.css'; 
 
 const Portfolio = () => {
   return (
@@ -17,7 +17,7 @@ const Portfolio = () => {
         <div className="projectList">
           <div className="projectItem">
             <img
-              src="https://cruisetechsolutions.s3.eu-north-1.amazonaws.com/ProjectOne.png" // Replace with your S3 URL
+              src="https://cruisetechsolutions.s3.eu-north-1.amazonaws.com/ProjectOne.png" 
               alt="Project 1"
               className="imageStyle"
             />
@@ -26,7 +26,7 @@ const Portfolio = () => {
           </div>
           <div className="projectItem">
             <img
-              src="https://cruisetechsolutions.s3.eu-north-1.amazonaws.com/ProjectTwo.png" // Replace with your S3 URL
+              src="https://cruisetechsolutions.s3.eu-north-1.amazonaws.com/ProjectTwo.png" 
               alt="Project 2"
               className="imageStyle"
             />
@@ -35,7 +35,7 @@ const Portfolio = () => {
           </div>
           <div className="projectItem">
             <img
-              src="https://cruisetechsolutions.s3.eu-north-1.amazonaws.com/ProjectThree.png" // Replace with your S3 URL
+              src="https://cruisetechsolutions.s3.eu-north-1.amazonaws.com/ProjectThree.png" 
               alt="Project 3"
               className="imageStyle"
             />
