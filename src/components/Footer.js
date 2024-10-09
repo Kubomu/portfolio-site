@@ -92,4 +92,18 @@ const iconStyle = {
   fontSize: '20px', // Adjust icon size if needed
 };
 
+// Media queries for responsive design
+const mediaQueries = `
+  @media (max-width: 600px) {
+    ${containerStyle.display = 'flex'}
+    ${containerStyle.flexDirection = 'column'}
+    ${containerStyle.alignItems = 'center'}
+    ${contactStyle.margin = '5px 0'}
+    ${socialStyle.margin = '5px 0'}
+    ${linksStyle.margin = '5px 0'}
+    ${linkStyle.fontSize = '16px'} // Adjust font size for mobile
+    ${copyrightStyle.fontSize = '12px'} // Adjust copyright font size for mobile
+  }
+`;
+
 export default Footer;

@@ -41,16 +41,16 @@ const Header = () => {
 
 const headerStyle = {
   display: 'flex',
-  justifyContent: 'space-between',
+  flexDirection: 'column', // Changed to column for mobile view
   alignItems: 'center',
-  padding: '20px 40px',
+  padding: '20px 10px', // Adjust padding for mobile
   backgroundColor: '#2C3E50',
   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
 };
 
 const titleStyle = {
   color: '#ECF0F1',
-  fontSize: '28px',
+  fontSize: '24px', // Reduced size for mobile
   letterSpacing: '2px',
   margin: 0,
   fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
@@ -59,14 +59,28 @@ const titleStyle = {
 const navStyle = {
   listStyleType: 'none',
   display: 'flex',
-  gap: '30px',
+  flexDirection: 'column', // Changed to column for mobile view
+  gap: '10px', // Reduced gap for mobile
 };
 
 const linkStyle = {
   textDecoration: 'none',
-  fontSize: '18px',
+  fontSize: '16px', // Reduced size for mobile
   fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
   transition: 'color 0.3s',
 };
+
+// Media queries for responsive design
+const mediaQueries = `
+  @media (min-width: 600px) {
+    ${headerStyle.display = 'flex'}
+    ${headerStyle.flexDirection = 'row'}
+    ${navStyle.flexDirection = 'row'}
+    ${navStyle.gap = '30px'}
+    ${titleStyle.fontSize = '28px'} // Increase font size for larger screens
+    ${linkStyle.fontSize = '18px'} // Increase link font size for larger screens
+    ${headerStyle.padding = '20px 40px'} // Original padding for larger screens
+  }
+`;
 
 export default Header;
