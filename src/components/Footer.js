@@ -31,13 +31,7 @@ const Footer = () => {
               GitHub
             </a>
           </div>
-          <div style={linksStyle}>
-            <h3 style={headerStyle}>Quick Links</h3>
-            <a href="#about" style={linkStyle}>About</a>
-            <a href="#services" style={linkStyle}>Services</a>
-            <a href="#portfolio" style={linkStyle}>Portfolio</a>
-            <a href="#contact" style={linkStyle}>Contact</a>
-          </div>
+    
         </div>
         <div style={copyrightStyle}>
           <p>&copy; {new Date().getFullYear()} Cruise Tech Solutions. All rights reserved.</p>
