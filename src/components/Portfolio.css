@@ -1,0 +1,39 @@
+/* Portfolio.css */
+
+#portfolio {
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Background color */
+  }
+  
+  .portfolio-heading {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .projectList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping of items */
+  }
+  
+  .projectItem {
+    margin: 15px;
+    text-align: center; /* Center text within the project item */
+    width: 300px; /* Fixed width for project items */
+  }
+  
+  .imageStyle {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .projectTitle {
+    font-size: 1.5em; /* Title size */
+    margin: 10px 0;
+  }
+  
+  .projectDescription {
+    color: #555; /* Description color */
+  }
+  

@@ -1,0 +1,64 @@
+/* About.css */
+
+#about {
+  padding: 50px 20px;
+  background-color: #f4f4f4; /* Light gray background */
+  text-align: center;
+}
+
+.about-heading {
+  font-size: 2.5em;
+  color: #2C3E50; /* Dark color for the heading */
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 1.1em;
+  color: #333; /* Dark gray for readability */
+  line-height: 1.6; /* Better spacing for readability */
+  max-width: 800px; /* Limit width for readability */
+  margin: 0 auto; /* Center the text */
+}
+
+.ceo-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e8e8e8; /* Light gray background for CEO section */
+  border-radius: 8px;
+}
+
+.ceo-heading {
+  font-size: 1.8em;
+  color: #2C3E50;
+  margin-bottom: 10px;
+}
+
+.additional-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ffffff; /* White background for additional section */
+  border-radius: 8px;
+  text-align: left; /* Left-align text */
+ 
+}
+
+.additional-heading {
+  font-size: 1.8em;
+  color: #2C3E50;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.expertise-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.expertise-list-item {
+  padding: 5px 0; /* Space between list items */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.expertise-list-item:hover {
+  color: #2C3E50; /* Change color on hover for effect */
+}
