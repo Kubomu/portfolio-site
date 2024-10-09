@@ -15,7 +15,7 @@ const About = () => {
       <section id="about">
         <h2 className="about-heading">About Cruise Tech Solutions</h2>
         <p className="about-description">
-          Cruise Tech Solutions is a full-service technology company specializing in software development, web design, 
+          Cruise Tech Solutions is a full-service technology company specializing in software development, website design, 
           mobile app development, automated systems, and home tech solutions. 
           Our mission is to provide innovative, efficient, and reliable technology services tailored to meet the needs of our clients.
         </p>
