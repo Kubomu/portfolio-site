@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Contact.css'; // Ensure to create this CSS file and link it correctly
+import { Helmet } from 'react-helmet'; // Import Helmet for managing meta tags
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -7,8 +7,6 @@ const Contact = () => {
     email: '',
     message: '',
   });
-
-  const [testimonials, setTestimonials] = useState([]); // State to hold submitted testimonials
 
   const handleChange = (e) => {
     setFormData({
@@ -19,81 +17,76 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Add the new testimonial to the testimonials state
-    setTestimonials((prevTestimonials) => [
-      ...prevTestimonials,
-      { ...formData, id: Date.now() }, // Add a unique id for each testimonial
-    ]);
-
-    // Reset the form
-    setFormData({
-      name: '',
-      email: '',
-      message: '',
-    });
-
-    alert(`Thank you, ${formData.name}! Your testimonial has been submitted.`);
+    // Here, you can handle form submission, like sending data to a server.
+    alert(`Thank you, ${formData.name}! We will get back to you shortly.`);
   };
 
   return (
-    <section id="contact" style={contactStyle}>
-      <h2 className="contact-heading">Testimonials</h2>
-      <p className="contact-description">
-        We value your feedback! Please share your thoughts about our services and how we can improve.
-      </p>
-      <form onSubmit={handleSubmit} style={formStyle}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-          className="contact-input"
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-          className="contact-input"
-        />
-        <textarea
-          name="message"
-          placeholder="Your Testimonial"
-          value={formData.message}
-          onChange={handleChange}
-          required
-          className="contact-textarea"
-        />
-        <button type="submit" className="contact-button">Submit Testimonial</button>
-      </form>
+    <>
+      <Helmet>
+        <meta name="description" content="Get in touch with Cruise Tech Solutions for inquiries, feedback, or project discussions." />
+        <meta name="keywords" content="Contact, Cruise Tech Solutions, inquiries, feedback, projects" />
+        <meta name="author" content="Kubomu Edwin" />
+        <title>Cruise Tech Solutions - Contact Us</title>
+      </Helmet>
 
-      {/* Display submitted testimonials */}
-      <div style={testimonialsStyle}>
-        <h3 className="testimonials-heading">Customer Testimonials:</h3>
-        {testimonials.length > 0 ? (
-          testimonials.map((testimonial) => (
-            <div key={testimonial.id} style={testimonialStyle}>
-              <strong>{testimonial.name}</strong> ({testimonial.email}):<br />
-              <p>{testimonial.message}</p>
-            </div>
-          ))
-        ) : (
-          <p>No testimonials submitted yet.</p>
-        )}
-      </div>
-    </section>
+      <section id="contact" style={contactStyle}>
+        <h2>Contact Us</h2>
+        <p>
+          We would love to hear from you! Whether you have questions, feedback, or would like to discuss a project,
+          please feel free to reach out to us.
+        </p>
+        <div style={contactInfoStyle}>
+          <p>
+            <strong>Email:</strong> Kubomuedwin@gmail.com
+          </p>
+          <p>
+            <strong>Phone:</strong> +256 788 150 981
+          </p>
+        </div>
+        <form onSubmit={handleSubmit} style={formStyle}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            style={inputStyle}
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            style={inputStyle}
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+            style={textareaStyle}
+          />
+          <button type="submit" style={buttonStyle}>Send Message</button>
+        </form>
+      </section>
+    </>
   );
 };
 
 const contactStyle = {
   padding: '50px 20px',
-  backgroundColor: '#f4f4f4',
+  backgroundColor: '#ffffff',
   textAlign: 'center',
+};
+
+const contactInfoStyle = {
+  margin: '20px 0',
+  fontSize: '18px',
 };
 
 const formStyle = {
@@ -103,23 +96,31 @@ const formStyle = {
   margin: '0 auto',
 };
 
-const testimonialsStyle = {
-  marginTop: '20px',
-  textAlign: 'left',
-  maxWidth: '500px',
-  margin: '20px auto',
+const inputStyle = {
+  margin: '10px 0',
   padding: '10px',
+  fontSize: '16px',
+  borderRadius: '4px',
   border: '1px solid #ccc',
-  borderRadius: '8px',
-  backgroundColor: '#ffffff',
 };
 
-const testimonialStyle = {
-  marginBottom: '15px',
+const textareaStyle = {
+  margin: '10px 0',
   padding: '10px',
-  border: '1px solid #2C3E50',
-  borderRadius: '8px',
-  backgroundColor: '#f9f9f9',
+  fontSize: '16px',
+  height: '100px',
+  borderRadius: '4px',
+  border: '1px solid #ccc',
+};
+
+const buttonStyle = {
+  padding: '10px 20px',
+  fontSize: '16px',
+  backgroundColor: '#2C3E50',
+  color: 'white',
+  border: 'none',
+  borderRadius: '4px',
+  cursor: 'pointer',
 };
 
 export default Contact;

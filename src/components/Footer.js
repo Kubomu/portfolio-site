@@ -1,39 +1,49 @@
 import React from 'react';
+import { Helmet } from 'react-helmet'; // Import Helmet for managing meta tags
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
-    <footer style={footerStyle}>
-      <div style={containerStyle}>
-        <div style={contactStyle}>
-          <h3>Contact Us</h3>
-          <p>Email: Kubomuedwin@gmail.com.com</p>
-          <p>Phone: +256 788 150 981</p>
+    <>
+      <Helmet>
+        <meta name="description" content="Contact information and social media links for Cruise Tech Solutions." />
+        <meta name="keywords" content="Footer, Contact, Social Media, Cruise Tech Solutions, Quick Links" />
+        <meta name="author" content="Kubomu Edwin" />
+        <title>Cruise Tech Solutions</title>
+      </Helmet>
+
+      <footer style={footerStyle}>
+        <div style={containerStyle}>
+          <div style={contactStyle}>
+            <h3>Contact Us</h3>
+            <p>Email: Kubomuedwin@gmail.com</p>
+            <p>Phone: +256 788 150 981</p>
+          </div>
+          <div style={socialStyle}>
+            <h3>Follow Us</h3>
+            <a href="https://x.com/KubomuEdi" style={linkStyle} target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faXTwitter} style={iconStyle} />
+              Twitter
+            </a>
+            <a href="https://github.com/Kubomu" style={linkStyle} target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithub} style={iconStyle} />
+              GitHub
+            </a>
+          </div>
+          <div style={linksStyle}>
+            <h3>Quick Links</h3>
+            <a href="#about" style={linkStyle}>About</a>
+            <a href="#services" style={linkStyle}>Services</a>
+            <a href="#portfolio" style={linkStyle}>Portfolio</a>
+            <a href="#contact" style={linkStyle}>Contact</a>
+          </div>
         </div>
-        <div style={socialStyle}>
-          <h3>Follow Us</h3>
-          <a href="https://x.com/KubomuEdi" style={linkStyle} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faXTwitter} style={iconStyle} />
-            Twitter
-          </a>
-          <a href="https://github.com/Kubomu" style={linkStyle} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faGithub} style={iconStyle} />
-            GitHub
-          </a>
+        <div style={copyrightStyle}>
+          <p>&copy; {new Date().getFullYear()} Cruise Tech Solutions. All rights reserved.</p>
         </div>
-        <div style={linksStyle}>
-          <h3>Quick Links</h3>
-          <a href="#about" style={linkStyle}>About</a>
-          <a href="#services" style={linkStyle}>Services</a>
-          <a href="#portfolio" style={linkStyle}>Portfolio</a>
-          <a href="#contact" style={linkStyle}>Contact</a>
-        </div>
-      </div>
-      <div style={copyrightStyle}>
-        <p>&copy; {new Date().getFullYear()} Cruise Tech Solutions. All rights reserved.</p>
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 };
 

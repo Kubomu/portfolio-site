@@ -1,31 +1,41 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet'; // Import Helmet for managing meta tags
 
 const Header = () => {
   const [hoveredLink, setHoveredLink] = useState(null);
 
   return (
-    <header style={headerStyle}>
-      <h1 style={titleStyle}>Cruise Tech Solutions</h1>
-      <nav>
-        <ul style={navStyle}>
-          {['About', 'Services', 'Portfolio', 'Contact'].map((item, index) => (
-            <li key={index}>
-              <a
-                href={`#${item.toLowerCase()}`}
-                style={{
-                  ...linkStyle,
-                  color: hoveredLink === index ? '#4CAF50' : '#ECF0F1',
-                }}
-                onMouseEnter={() => setHoveredLink(index)}
-                onMouseLeave={() => setHoveredLink(null)}
-              >
-                {item}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </header>
+    <>
+      <Helmet>
+        <meta name="description" content="Header of Cruise Tech Solutions website with navigation links." />
+        <meta name="keywords" content="Cruise Tech Solutions, Header, Navigation, About, Services, Portfolio, Contact" />
+        <meta name="author" content="Kubomu Edwin" />
+        <title>Cruise Tech Solutions</title>
+      </Helmet>
+
+      <header style={headerStyle}>
+        <h1 style={titleStyle}>Cruise Tech Solutions</h1>
+        <nav>
+          <ul style={navStyle}>
+            {['About', 'Services', 'Portfolio', 'Contact'].map((item, index) => (
+              <li key={index}>
+                <a
+                  href={`#${item.toLowerCase()}`}
+                  style={{
+                    ...linkStyle,
+                    color: hoveredLink === index ? '#4CAF50' : '#ECF0F1',
+                  }}
+                  onMouseEnter={() => setHoveredLink(index)}
+                  onMouseLeave={() => setHoveredLink(null)}
+                >
+                  {item}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </header>
+    </>
   );
 };
 
