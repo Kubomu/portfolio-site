@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <meta name="description" content="Cruise Tech Solutions is a full-service technology company specializing in software development, web design, mobile app development, automated systems, and home tech solutions." />
+        <meta name="description" content="Cruise Tech Solutions is a full-service tech company specializing in software development, web design, mobile app development, automated systems, and home tech solutions." />
         <meta name="keywords" content="Cruise Tech Solutions, software development, web design, mobile app development, automated systems, home tech solutions" />
         <meta name="author" content="Kubomu Edwin" />
         <title>About Cruise Tech Solutions</title>
