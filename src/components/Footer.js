@@ -25,11 +25,9 @@ const Footer = () => {
             <h3>Follow Us</h3>
             <a href="https://x.com/KubomuEdi" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faXTwitter} className="icon" />
-              X
             </a>
             <a href="https://github.com/Kubomu" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} className="icon" />
-              GitHub
             </a>
           </div>
         </div>
