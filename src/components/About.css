@@ -79,3 +79,49 @@
   font-size: 2em; /* Adjust size to match other headings */
   color: #4CAF50; /* Same color as other headings, adjust as needed */
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  #about {
+    padding: 40px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .about-heading {
+    font-size: 2rem; /* Smaller heading size on mobile */
+  }
+
+  .about-description {
+    font-size: 1rem; /* Smaller font size for description */
+    max-width: 100%; /* Full width on mobile */
+  }
+
+  .ceo-heading {
+    font-size: 1.5rem; /* Smaller heading size for CEO */
+  }
+
+  .expertise-heading {
+    font-size: 1.5rem; /* Smaller heading size for expertise */
+  }
+
+  .expertise-list-item {
+    padding: 10px; /* Less padding on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-heading {
+    font-size: 1.5rem; /* Further reduce heading size */
+  }
+
+  .about-description {
+    font-size: 0.9rem; /* Further reduce description font size */
+  }
+
+  .ceo-image {
+    max-width: 150px; /* Further limit image size */
+  }
+
+  .centered-heading {
+    font-size: 1.5em; /* Smaller size for centered headings */
+  }
+}

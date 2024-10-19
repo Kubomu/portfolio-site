@@ -25,7 +25,8 @@
   margin-bottom: 30px; /* Space below contact info */
 }
 
-.input-field, .textarea-field {
+.input-field,
+.textarea-field {
   width: 100%; /* Full width inputs */
   padding: 12px; /* Padding for inputs */
   margin: 10px 0; /* Space between fields */
@@ -51,4 +52,51 @@
   margin-top: 20px; /* Space above status message */
   font-weight: bold; /* Bold text for emphasis */
   color: #4CAF50; /* Green color for success messages */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .contact-heading {
+    font-size: 2rem; /* Slightly smaller heading for medium screens */
+  }
+
+  .contact-description {
+    font-size: 1.1rem; /* Slightly smaller description font size */
+  }
+
+  .contact-info {
+    font-size: 1rem; /* Slightly smaller contact info font size */
+  }
+
+  .input-field, .textarea-field {
+    padding: 10px; /* Reduced padding for smaller screens */
+  }
+
+  .submit-btn {
+    padding: 10px 15px; /* Smaller button padding */
+    font-size: 0.9rem; /* Smaller font size for button */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-heading {
+    font-size: 1.8rem; /* Further reduce heading size for small screens */
+  }
+
+  .contact-description {
+    font-size: 1rem; /* Further reduce description font size */
+  }
+
+  .contact-info {
+    font-size: 0.9rem; /* Further reduce contact info font size */
+  }
+
+  .input-field, .textarea-field {
+    margin: 8px 0; /* Adjust margins for fields */
+  }
+
+  .submit-btn {
+    padding: 8px 12px; /* Further reduce button padding */
+    font-size: 0.8rem; /* Further reduce font size for button */
+  }
 }
