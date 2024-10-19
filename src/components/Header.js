@@ -14,17 +14,15 @@ const Header = () => {
         <title>Cruise Tech Solutions</title>
       </Helmet>
 
-      <header>
-        <h1>Cruise Tech Solutions</h1>
+      <header className="header">
+        <h1 className="logo">Cruise Tech Solutions</h1>
         <nav>
-          <ul>
+          <ul className="nav-links">
             {['About', 'Services', 'Portfolio', 'Contact'].map((item, index) => (
-              <li key={index}>
+              <li key={index} className="nav-item">
                 <a
                   href={`#${item.toLowerCase()}`}
-                  style={{
-                    color: hoveredLink === index ? '#4CAF50' : '#ECF0F1',
-                  }}
+                  className={`nav-link ${hoveredLink === index ? 'hovered' : ''}`}
                   onMouseEnter={() => setHoveredLink(index)}
                   onMouseLeave={() => setHoveredLink(null)}
                 >

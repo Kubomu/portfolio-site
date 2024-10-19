@@ -1,96 +1,50 @@
-/* Portfolio.css */
-
-/* General Styles */
-#portfolio {
-  padding: 40px 20px;
-  background-color: #f7f9fc;
-  color: #2c3e50;
-  font-family: 'Arial', sans-serif;
-  text-align: center;
+.portfolio-section {
+  padding: 40px 20px; /* Padding for the section */
+  background-color: #f4f4f4; /* Light background for contrast */
 }
 
 .portfolio-heading {
-  font-size: 32px;
-  margin-bottom: 30px;
-  color: #4caf50;
+  text-align: center; /* Center the heading */
+  font-size: 32px; /* Heading font size */
+  margin-bottom: 20px; /* Space below heading */
+  color: #2C3E50; /* Darker color for heading */
 }
 
-/* Portfolio Grid */
 .projectList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Space projects evenly */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .projectItem {
-  background-color: #ecf0f1;
-  border-radius: 8px;
-  padding: 20px;
-  width: 30%;
-  margin: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  background-color: #fff; /* White background for project items */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 15px; /* Margin between items */
+  padding: 20px; /* Padding inside items */
+  text-align: center; /* Center text in items */
+  flex-basis: calc(30% - 40px); /* Flex basis for responsive design */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
 }
 
 .projectItem:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.imageStyle {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for images */
 }
 
 .projectTitle {
-  font-size: 24px;
-  margin: 15px 0 10px;
-  color: #4caf50;
+  font-size: 20px; /* Title font size */
+  margin: 10px 0; /* Space above and below title */
+  color: #4CAF50; /* Green color for titles */
 }
 
 .projectDescription {
-  font-size: 18px;
-  color: #34495e;
-  line-height: 1.6;
-}
-
-/* Image Styling */
-.imageStyle {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .projectItem {
-    width: 45%;
-  }
-
-  .portfolio-heading {
-    font-size: 28px;
-  }
-
-  .projectTitle {
-    font-size: 22px;
-  }
-
-  .projectDescription {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 600px) {
-  .projectItem {
-    width: 90%;
-  }
-
-  .portfolio-heading {
-    font-size: 26px;
-  }
-
-  .projectTitle {
-    font-size: 20px;
-  }
-
-  .projectDescription {
-    font-size: 14px;
-  }
+  font-size: 16px; /* Description font size */
+  color: #333; /* Darker color for description text */
 }

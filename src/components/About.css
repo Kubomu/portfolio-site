@@ -1,102 +1,81 @@
-/* About.css */
-
-/* General Styles */
 #about {
-  padding: 40px 20px;
-  background-color: #f7f9fc;
-  color: #2c3e50;
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
+  padding: 60px 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
 }
 
 .about-heading {
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #4caf50;
+  font-size: 2.5rem; /* Larger heading */
+  color: #333; /* Dark color for text */
+  margin-bottom: 30px; /* Spacing below heading */
 }
 
 .about-description {
-  font-size: 18px;
-  margin-bottom: 20px;
-  text-align: justify;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1.2rem; /* Readable font size */
+  color: #555; /* Slightly lighter color */
+  line-height: 1.6; /* Increased line height for readability */
+  max-width: 800px; /* Limit width for better readability */
+  margin: 0 auto; /* Center alignment */
+  margin-bottom: 20px; /* Spacing below paragraphs */
 }
 
-/* CEO Section */
 .ceo-section {
-  margin-top: 40px;
-  background-color: #ecf0f1;
+  margin-top: 40px; /* Space above CEO section */
   padding: 20px;
-  border-radius: 8px;
+  border: 1px solid #ddd; /* Border for emphasis */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fff; /* White background for contrast */
+  text-align: center; /* Center alignment for content */
+}
+
+.ceo-image {
+  width: 100%; /* Responsive image */
+  max-width: 200px; /* Limit maximum width */
+  border-radius: 50%; /* Circular image */
+  margin-bottom: 20px; /* Space below image */
 }
 
 .ceo-heading {
-  font-size: 26px;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #4caf50;
+  font-size: 2rem; /* Heading size for CEO */
+  color: #4CAF50; /* Accent color for headings */
+  margin-bottom: 15px; /* Spacing below heading */
 }
 
-/* Expertise Section */
-.additional-section {
-  margin-top: 40px;
+.expertise-section {
+  margin-top: 40px; /* Space above expertise section */
 }
 
-.additional-heading {
-  font-size: 26px;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #4caf50;
+.expertise-heading {
+  font-size: 2rem; /* Heading size for expertise */
+  color: #4CAF50; /* Accent color for headings */
 }
 
 .expertise-list {
-  list-style: none;
-  padding: 0;
-  max-width: 900px;
-  margin: 0 auto;
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
 }
 
 .expertise-list-item {
-  font-size: 18px;
-  margin: 10px 0;
-  padding-left: 20px;
-  position: relative;
-  line-height: 1.8;
+  background: #e9f5e9; /* Light green background for list items */
+  border-radius: 5px; /* Rounded corners */
+  margin: 10px 0; /* Space between list items */
+  padding: 15px; /* Padding inside list items */
+  transition: transform 0.3s; /* Smooth hover effect */
 }
 
-.expertise-list-item::before {
-  content: "✔";
-  color: #4caf50;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  top: 2px;
+.expertise-list-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .about-heading, .ceo-heading, .additional-heading {
-    font-size: 24px;
-  }
-
-  .about-description, .expertise-list-item {
-    font-size: 16px;
-  }
+.expertise-icon {
+  margin-right: 8px; /* Adjusts spacing between the icon and text */
+  color: #4CAF50; /* Optional: Change to your brand color */
+  font-size: 1.2em; /* Adjust the size of the icon */
 }
 
-@media (max-width: 600px) {
-  #about {
-    padding: 20px 10px;
-  }
-
-  .about-heading, .ceo-heading, .additional-heading {
-    font-size: 22px;
-  }
-
-  .about-description, .expertise-list-item {
-    font-size: 14px;
-  }
+/* Centering styles */
+.centered-heading {
+  text-align: center; /* Center the text */
+  margin: 20px 0; /* Adjust margin for spacing */
+  font-size: 2em; /* Adjust size to match other headings */
+  color: #4CAF50; /* Same color as other headings, adjust as needed */
 }

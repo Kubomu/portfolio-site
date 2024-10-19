@@ -1,88 +1,44 @@
-/* Services.css */
-
-/* General Styles */
-#services {
-  padding: 40px 20px;
-  background-color: #f7f9fc;
-  color: #2c3e50;
-  font-family: 'Arial', sans-serif;
-  text-align: center;
+.services-section {
+  padding: 40px 20px; /* Padding for the section */
+  background-color: #f4f4f4; /* Light background for contrast */
 }
 
 .heading {
-  font-size: 32px;
-  margin-bottom: 30px;
-  color: #4caf50;
+  text-align: center; /* Center the heading */
+  font-size: 32px; /* Heading font size */
+  margin-bottom: 30px; /* Space below heading */
+  color: #2C3E50; /* Darker color for heading */
 }
 
-/* Services List Styling */
 .serviceList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Space services evenly */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .serviceItem {
-  background-color: #ecf0f1;
-  border-radius: 8px;
-  padding: 20px;
-  width: 30%;
-  margin: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  background-color: #fff; /* White background for service items */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 15px; /* Margin between items */
+  padding: 20px; /* Padding inside items */
+  text-align: center; /* Center text in items */
+  flex-basis: calc(30% - 40px); /* Flex basis for responsive design */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
 }
 
 .serviceItem:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* Lift effect on hover */
 }
 
 .serviceTitle {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #4caf50;
+  font-size: 24px; /* Title font size */
+  margin: 10px 0; /* Space above and below title */
+  color: #4CAF50; /* Green color for titles */
 }
 
 .serviceDescription {
-  font-size: 18px;
-  color: #34495e;
-  line-height: 1.6;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .serviceItem {
-    width: 45%;
-  }
-
-  .heading {
-    font-size: 28px;
-  }
-
-  .serviceTitle {
-    font-size: 22px;
-  }
-
-  .serviceDescription {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 600px) {
-  .serviceItem {
-    width: 90%;
-  }
-
-  .heading {
-    font-size: 26px;
-  }
-
-  .serviceTitle {
-    font-size: 20px;
-  }
-
-  .serviceDescription {
-    font-size: 14px;
-  }
+  font-size: 16px; /* Description font size */
+  color: #333; /* Darker color for description text */
 }

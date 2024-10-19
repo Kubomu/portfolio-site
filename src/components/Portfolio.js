@@ -1,8 +1,29 @@
 import React from 'react';
-import { Helmet } from 'react-helmet'; 
-import './Portfolio.css'; 
+import { Helmet } from 'react-helmet';
+import './Portfolio.css'; // Import the CSS file
 
 const Portfolio = () => {
+  const projects = [
+    {
+      title: 'Bank Systems',
+      description: 'Web app for managing business workflows.',
+      imageUrl: 'https://cruisetechsolutions.s3.eu-north-1.amazonaws.com/ProjectOne.png',
+      altText: 'Project 1',
+    },
+    {
+      title: 'Point Of Sale',
+      description: 'E-commerce platform for small businesses.',
+      imageUrl: 'https://cruisetechsolutions.s3.eu-north-1.amazonaws.com/ProjectTwo.png',
+      altText: 'Project 2',
+    },
+    {
+      title: 'Hotel Management Systems',
+      description: 'Custom CRM software for better client relationships.',
+      imageUrl: 'https://cruisetechsolutions.s3.eu-north-1.amazonaws.com/ProjectThree.png',
+      altText: 'Project 3',
+    },
+  ];
+
   return (
     <>
       <Helmet>
@@ -12,36 +33,20 @@ const Portfolio = () => {
         <title>Cruise Tech Solutions - Our Portfolio</title>
       </Helmet>
 
-      <section id="portfolio">
+      <section id="portfolio" className="portfolio-section">
         <h2 className="portfolio-heading">Our Portfolio</h2>
         <div className="projectList">
-          <div className="projectItem">
-            <img
-              src="https://cruisetechsolutions.s3.eu-north-1.amazonaws.com/ProjectOne.png" 
-              alt="Project 1"
-              className="imageStyle"
-            />
-            <h3 className="projectTitle">Bank Systems</h3>
-            <p className="projectDescription">Web app for managing business workflows.</p>
-          </div>
-          <div className="projectItem">
-            <img
-              src="https://cruisetechsolutions.s3.eu-north-1.amazonaws.com/ProjectTwo.png" 
-              alt="Project 2"
-              className="imageStyle"
-            />
-            <h3 className="projectTitle">Point Of Sale</h3>
-            <p className="projectDescription">E-commerce platform for small businesses.</p>
-          </div>
-          <div className="projectItem">
-            <img
-              src="https://cruisetechsolutions.s3.eu-north-1.amazonaws.com/ProjectThree.png" 
-              alt="Project 3"
-              className="imageStyle"
-            />
-            <h3 className="projectTitle">Hotel Management Systems</h3>
-            <p className="projectDescription">Custom CRM software for better client relationships.</p>
-          </div>
+          {projects.map((project, index) => (
+            <div key={index} className="projectItem">
+              <img
+                src={project.imageUrl}
+                alt={project.altText}
+                className="imageStyle"
+              />
+              <h3 className="projectTitle">{project.title}</h3>
+              <p className="projectDescription">{project.description}</p>
+            </div>
+          ))}
         </div>
       </section>
     </>
