@@ -93,7 +93,7 @@ const About = () => {
                 className="team-member-image"
               />
               <h4 className="team-member-name">Ochom Gabriel Parsley</h4>
-              <p className="team-member-role">Designer/Animator/Game Devloper</p>
+              <p className="team-member-role">Designer/Animator/Game Developer</p>
             </div>
             <div className="team-member">
               <img
