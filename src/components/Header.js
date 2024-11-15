@@ -15,7 +15,7 @@ const Header = () => {
       </Helmet>
 
       <header>
-        <h1>Cruise Tech Valley</h1>
+        <h1>Cruise Tech Solutions</h1>
         <nav>
           <ul>
             {['About', 'Services', 'Portfolio', 'Contact'].map((item, index) => (

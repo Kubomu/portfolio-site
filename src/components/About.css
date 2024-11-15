@@ -80,6 +80,74 @@
   color: #4CAF50; /* Same color as other headings, adjust as needed */
 }
 
+
+.team-section {
+  margin-top: 60px; /* Space above team section */
+  padding: 20px;
+  background-color: #f1f1f1; /* Light background for contrast */
+  text-align: center;
+  border-radius: 8px;
+}
+
+.team-heading {
+  font-size: 2rem; /* Match heading size */
+  color: #4CAF50; /* Accent color */
+  margin-bottom: 30px; /* Space below heading */
+}
+
+.team-list {
+  display: flex;
+  justify-content: center; /* Center team members */
+  flex-wrap: wrap; /* Wrap on smaller screens */
+  gap: 20px; /* Spacing between team members */
+}
+
+.team-member {
+  background-color: #fff; /* White background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px; /* Fixed width for uniform cards */
+  text-align: center;
+  transition: transform 0.3s; /* Hover effect */
+}
+
+.team-member:hover {
+  transform: translateY(-5px); /* Lift effect */
+}
+
+.team-member-image {
+  width: 100%; /* Responsive image */
+  max-width: 200px; /* Limit maximum width */
+  border-radius: 50%; /* Circular image */
+  margin-bottom: 20px; /* Space below image */
+}
+
+.team-member-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333; /* Text color */
+  margin: 10px 0 5px; /* Space around name */
+}
+
+.team-member-role {
+  font-size: 1rem;
+  color: #555; /* Slightly lighter color */
+}
+
+/* Mobile Responsiveness for Team Section */
+@media (max-width: 768px) {
+  .team-list {
+    flex-direction: column; /* Stack members vertically on smaller screens */
+    align-items: center;
+  }
+
+  .team-member {
+    width: 80%; /* Full width on mobile */
+  }
+}
+
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   #about {
