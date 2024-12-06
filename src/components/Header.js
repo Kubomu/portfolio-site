@@ -8,14 +8,30 @@ const Header = () => {
   return (
     <>
       <Helmet>
-        <meta name="description" content="Header of Cruise Tech Solutions website with navigation links." />
-        <meta name="keywords" content="Cruise Tech Solutions, Header, Navigation, About, Services, Portfolio, Contact" />
+        <meta
+          name="description"
+          content="Header of Cruise Tech Solutions website with navigation links."
+        />
+        <meta
+          name="keywords"
+          content="Cruise Tech Solutions, Header, Navigation, About, Services, Portfolio, Contact"
+        />
         <meta name="author" content="Kubomu Edwin" />
         <title>Cruise Tech Solutions</title>
       </Helmet>
 
       <header>
-        <h1>Cruise Tech Solutions</h1>
+        <h1>
+          <a
+            href="/"
+            style={{
+              textDecoration: 'none',
+              color: '#ECF0F1',
+            }}
+          >
+            Cruise Tech Solutions
+          </a>
+        </h1>
         <nav>
           <ul>
             {['About', 'Services', 'Portfolio', 'Contact'].map((item, index) => (
