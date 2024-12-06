@@ -84,7 +84,7 @@ const About = () => {
                 className="team-member-image"
               />
               <h4 className="team-member-name">Rwot-omiya Daudi Vincent</h4>
-              <p className="team-member-role">Co-Founder/Lead Developer</p>
+              <p className="team-member-role">Co-Founder/FullStack Developer/Lead Developer</p>
             </div>
             <div className="team-member">
               <img
@@ -93,7 +93,7 @@ const About = () => {
                 className="team-member-image"
               />
               <h4 className="team-member-name">Ochom Gabriel Parsley</h4>
-              <p className="team-member-role">UI/UX Designer/Animator</p>
+              <p className="team-member-role">Designer/Animator/Game Developer</p>
             </div>
             <div className="team-member">
               <img
