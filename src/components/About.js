@@ -102,7 +102,7 @@ const About = () => {
                 className="team-member-image"
               />
               <h4 className="team-member-name">Ocitti Raphael</h4>
-              <p className="team-member-role">Project Manager</p>
+              <p className="team-member-role">Project Manager/DevOps</p>
             </div>
           </div>
         </div>
